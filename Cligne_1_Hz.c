@@ -12,13 +12,13 @@
 
 int main( int argc, char **argv )
 {
-  / Initialisation du bcm2835
+  // Initialisation du bcm2835
   if(!bcm2835_init()){
     return 1;
   }
    
   // Configuration du GPIO pour DEL 1 (rouge)
-  bcm2835_gpio_fsel(20 , BCM2835_GPIO_FSEL_OUTP)
+  bcm2835_gpio_fsel(20 , BCM2835_GPIO_FSEL_OUTP);
   // Configuration du GPIO pour bouton - poussoir 1
   bcm2835_gpio_fsel(19 , BCM2835_GPIO_FSEL_INPT);
 
