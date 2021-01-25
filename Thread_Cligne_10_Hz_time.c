@@ -50,7 +50,7 @@
       // CLOCK_PER_SEC est le nombre de coups d’horloges en 1 seconde
 
       usleep(1000000*(demiPer -((double) (fin - debut)/((double) CLOCKS_PER_SEC))));
-      debut = fin;
+      debut = clock();
     }
     pthread_exit( NULL );
  }
